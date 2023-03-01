@@ -2,7 +2,6 @@
 ---
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
-@import url("/css/simple-grid.css");
 
 // Reset
 
@@ -55,7 +54,8 @@ table {
 $gray-400: #1D1D1D;
 $gray-300: #252525;
 $gray-200: #424242;
-$gray-100: #a8a8a8;
+$gray-100: #CBCBCB;
+$highlight: #FFC405;
 
 // Mixins
 
@@ -122,9 +122,13 @@ small, .text_small {font-size: 0.8rem;}
 
 // Global
 
+::selection {
+    background: $highlight;
+    color: $gray-400;
+}
+
 html {
     background: $gray-400;
-    transition: all 0.5s ease;
 }
 
 .container {
@@ -136,10 +140,12 @@ html {
 }
 
 a {
+    border-bottom: 2px solid $gray-100;
     color: $gray-100;
-    text-decoration: underline;
+    text-decoration: none;
     
     &:hover {
+        border-color: $highlight;
         text-decoration: none;
     }
 }
@@ -147,11 +153,9 @@ a {
 // Nav & Footer
 
 nav, footer {
-    background: $gray-300;
     color: $gray-100;
     padding: 1em 0;
     font-size: 1.25em;
-    font-weight: 500;
 
     .container {
         @include flex-between-middle
@@ -159,8 +163,19 @@ nav, footer {
 
     .brand {
         a {
+            @include flex-between-middle;
             color: $gray-100;
             text-decoration: none;
+            border: none;
+
+            svg {
+                fill: $highlight;
+                margin-right: 1rem;
+            }
+
+            &:hover {
+                color: white;
+            }
         }
     }
 }
@@ -194,116 +209,77 @@ footer {
 // Project Grid
 
 .project-grid {
-    .row {
-        @include flex-between-middle;
-        gap: 2em;
-        margin-bottom: 2em;
+    padding: 0 6rem;
+}
+
+.project-grid > ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+}
+
+.project-grid > ul > li {
+    border: 1px solid transparent;
+    position: relative;
+
+    &:hover {
+        .figure-body {
+            border-left: 2px solid $highlight;
+        }
+
+        img {
+            opacity: .5;
+        }
     }
 }
 
-.grid-item, .grid-item-project {
-    border-color: $gray-300;
-    border: 1px solid;
-    border-radius: 500px;
-    height: 6em;
+.project-grid > ul > li > figure {
+    max-height: 320px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        width: 100%;
+    }
 }
 
-.grid-item {
-    @include flex-between-middle;
-    color: $gray-200;
-    padding: 0 1.5em;
-    width: 25%;
+.project-grid > ul > li > figure > img {
+    width: 100%;
+}
+
+.figure-body {
+    background: $gray-300;
+    border-left: 2px solid transparent;
+    color: $gray-100;
+    padding: 1rem 1.5rem;
 
     h2 {
-        color: $gray-100;
-        font-family: 'Inter', sans-serif;
-        font-size: 1.25em;
-        font-weight: 500;
-        letter-spacing: .05em;
+        font-size: 1.5em;
         margin: 0;
-        text-transform: uppercase;
     }
-}
 
-.grid-item-project {
-    display: flex;
-    width: 75%;
+    p {
+        font-size: 1rem;
+        margin: 0;
+    }
 
     a {
-        align-items: center;
-        border-radius: 500px;
-        color: white;
-        display: flex;
-        flex: 1;
-        font-family: roc-grotesk, sans-serif;
-        font-size: 2em;
-        padding: 0 .6em;
         text-decoration: none;
 
         &:hover {
-            background: rgba(white, .1);
-            background-image: url('../images/arrow.svg');
-            background-repeat: no-repeat;
-            background-position: 96% center;
+
         }
-
-        &::before {
-            background: white;
-            border-radius: 50%;
-            content: "";
-            display: inline-block;
-            height: 2em;
-            margin-right: .75em;
-            width: 2em;
+        
+        span {
+            position:absolute; 
+            width:100%;
+            height:100%;
+            top:0;
+            left: 0;
+            z-index: 1;
         }
-    }
-}
-
-.grid-item.left {
-    border-radius: 0 500px 500px 0;
-    border-left: 0;
-}
-
-.grid-item.right {
-    border-radius: 500px 0 0 500px;
-    border-right: 0;
-}
-
-.grid-item-project.left {
-    margin-left: 6em;
-}
-
-.grid-item-project.right {
-    margin-right: 6em;
-}
-
-a.untappd {
-    &::before {
-        background-color: #FFC405;
-    }
-}
-
-a.crossroads {
-    &::before {
-        background-color: #F47920;
-    }
-}
-
-a.clarke {
-    &::before {
-        background-color: #E32526;
-    }
-}
-
-a.health-carousel {
-    &::before {
-        background-color: #872E91;
-    }
-}
-
-a.webstop {
-    &::before {
-        background-color: #0194D3;
     }
 }
 

@@ -8,85 +8,98 @@ title: Ryan Payne
   <body>
     {% include nav.html %}
 
-    <div class="container">
-      <div class="row">
-        <div class="col-3">
-          This content will take up 3/12 (or 1/4) of the container
-        </div>
-        <div class="col-3">
-          This content will take up 3/12 (or 1/4) of the container
-        </div>
-        <div class="col-6">
-          This content will take up 6/12 (or 1/2) of the container
-        </div>
-      </div>
-    </div>
-
-    <div class="featured-text">
-      <div class="container">
-        <p class="large">I’m Ryan, a digital product designer based in Cincinnati. I turn complex ideas into easy to use digital products by being curious, asking the right questions, and sweating the right details.</p>
-      </div>
+    <div class="container half featured-text">
+      <p class="large indent-left">I’m Ryan, a digital product designer based in Cincinnati. I turn complex ideas into easy to use digital products by being curious, asking the right questions, and sweating the details.</p>
     </div>
     
     <!-- Project Grid -->
     
     <div class="project-grid">
-      <div class="row">
-        <div class="grid-item left">
-          <h2>Featured work</h2>
-        </div>
-  
-        <div class="grid-item-project right">
-          <a class="untappd" href="#">
-            <span class="brand-color untappd"></span>
-            Untappd for Business
-          </a>
-        </div>
-      </div>
+      <ul>
+        <li>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1532635241-17e820acc59f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJlZXIlMjBmcmllbmRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="">
+          </figure>
+          <div class="figure-body">
+            <a href="/untappd">
+              <h2>Untappd for Business</h2>
+              <span></span>
+            </a>
+            <p>Wilmington, NC</p>
+          </div>
+        </li>
 
-      <div class="row">
-        <div class="grid-item-project left">
-          <a class="crossroads" href="/crossroads">
-            <span class="brand-color"></span>
-            Crossroads Church
-          </a>
-        </div>
+        <li>
+          <figure>
+            <img src="https://www.gannett-cdn.com/presto/2020/07/16/PCIN/30999d6b-d068-46d7-92a7-e844c1503ca4-crossroads.jpg" alt="">
+              <span></span>
+            </a>
+          </figure>
+          <div class="figure-body">
+            <a href="/crossroads">
+              <h2>Crossroads Church</h2>
+              <span></span>
+            </a>
+            <p>Cincinnati, OH</p>
+          </div>
+        </li>
 
-        <div class="grid-item right"></div>
-      </div>
+        <li>
+          <figure>
+            <img src="https://www.clarkepowerservices.com/images/default-source/default-album/pm_clarketech3_rectangle.png?sfvrsn=5a3dc0ea_0" alt="">
+          </figure>
+          <div class="figure-body">
+            <a href="/clarke">
+              <h2>Clarke Power Services</h2>
+              <span></span>
+            </a>
+            <p>Cincinnati, OH</p>
+          </div>
+        </li>
 
-      <div class="row">
-        <div class="grid-item left"></div>
-  
-        <div class="grid-item-project right">
-          <a class="clarke" href="#">
-            <span class="brand-color"></span>
-            Clarke Power Services
-          </a>
-        </div>
-      </div>
+        <li>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1590611936760-eeb9bc598548?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80" alt="">
+          </figure>
+          <div class="figure-body">
+            <a href="/health-carousel.html">
+              <h2>Health Carousel</h2>
+              <span></span>
+            </a>
+            <p>Cincinnati, OH</p>
+          </div>
+        </li>
 
-      <div class="row">
-        <div class="grid-item left"></div>
-  
-        <div class="grid-item-project right">
-          <a class="health-carousel" href="#">
-            <div><span class="brand-color"></span>
-              Health Carousel</div>
-          </a>
-        </div>
-      </div>
+        <li>
+          <figure>
+            <img src="https://www.webstop.com/assets/stock_images/WomanShopping_480x580-87b5e05ed0e6779ebcb8a6fd18b7d5659fe206911d0f185ef5cd24c94b7b168e.jpg" alt="">
+          </figure>
+          <div class="figure-body">
+            <a href="/webstop">
+              <h2>Webstop</h2>
+              <span></span>
+            </a>
+            <p>Tampa, FL</p>
+          </div>
+        </li>
 
-      <div class="row">
-        <div class="grid-item-project left">
-          <a class="webstop" href="#">
-            <span class="brand-color"></span>
-            Webstop
-          </a>
-        </div>
+        <li>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80" alt="">
+          </figure>
+          <div class="figure-body">
+            <a href="/next-glass">
+              <h2>Next Glass</h2>
+              <span></span>
+            </a>
+            <p>Wilmington, NC</p>
+          </div>
+        </li>
+      </ul>            
+    </div>
 
-        <div class="grid-item right"></div>
-      </div>
+    <div class="container half featured-text">
+      <p class="large indent-left">I’m currently partnering with clients through Ingage Partners in Cincinnati, OH. If you'd like to work together, <a href="https://www.ingagepartners.com/contact">contact us</a>. We’d love to hear more about your needs.</p>
     </div>
 
     {% include footer.html %}
