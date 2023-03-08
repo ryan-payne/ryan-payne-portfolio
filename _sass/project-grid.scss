@@ -1,0 +1,72 @@
+.project-grid {
+  padding: 3rem 6rem;
+  @include breakpoint(md) {
+    padding: 3rem
+  }
+}
+
+.project-grid > ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 3em;
+  grid-row-gap: 3em;
+  @include breakpoint(md) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project-grid > ul > li {
+  border: 1px solid transparent;
+  list-style: none;
+  position: relative;
+  transition: all 0.3s ease;
+  .figure-body, img {
+      transition: all 0.3s ease;
+  }
+
+  &:hover {
+    .figure-body {
+      border-left: 4px solid $highlight;
+      padding-left: 1.5rem;
+    }
+    img {
+      opacity: .75;
+    }
+  }
+}
+
+.project-grid > ul > li > figure {
+  border-radius: $radius;
+  max-height: 264px;
+  overflow: hidden;
+  position: relative;
+  img {
+    width: 100%;
+  }
+}
+
+.figure-body {
+  border-left: 4px solid transparent;
+  color: $gray-100;
+  margin-top: 2em;
+  padding: 0 1.5rem;
+  h2 {
+      font-size: 1.5em;
+      margin: 0;
+  }
+  p {
+      font-size: 1rem;
+      margin: 0;
+  }
+  a {
+    text-decoration: none;    
+    span {
+      position:absolute; 
+      width:100%;
+      height:100%;
+      top:0;
+      left: 0;
+      z-index: 1;
+    }
+  }
+}

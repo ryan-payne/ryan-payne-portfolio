@@ -1,336 +1,45 @@
 ---
 ---
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
-
-// Reset
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-// Colors
-
-$gray-400: #1D1D1D;
-$gray-300: #252525;
-$gray-200: #424242;
-$gray-100: #CBCBCB;
-$highlight: #FFC405;
-
-// Mixins
-
-@mixin flex-between-middle {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-}
-
-// Typography
-
-html {font-size: 100%;} /*16px*/
-
-body {
-    color: $gray-100;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    line-height: 1.75;
-}
-
-p {
-    font-size: 1.5em;
-    margin-bottom: 1rem;
-}
-
-p.large {
-    color: $gray-100;
-    font-size: 2em;
-    font-weight: 300;
-    line-height: 1.5;
-}
-
-p.caption {
-    width: 35%;
-    padding: 0 8rem;
-}
-
-h1, h2, h3, h4, h5 {
-  margin: 3rem 0 1.38rem;
-  font-family: roc-grotesk, sans-serif;
-  font-weight: 400;
-  line-height: 1.3;
-  color: white;
-}
-
-.title {
-    font-size: 6em;
-}
-
-h1 {
-  margin-top: 0;
-  font-size: 3.052rem;
-}
-
-h2 {font-size: 2.441rem;}
-
-h3 {font-size: 1.953rem;}
-
-h4 {font-size: 1.563rem;}
-
-h5 {font-size: 1.25rem;}
-
-small, .text_small {font-size: 0.8rem;}
-
-// Global
+@import "reset";
+@import "breakpoints";
+@import "variables";
+@import "mixins";
+@import "Utilities";
+@import "Typography";
+@import "nav";
+@import "project-grid";
+@import "more-work";
+@import "resume";
+@import "project-page";
 
 ::selection {
-    background: $highlight;
-    color: $gray-400;
+  background: $highlight;
+  color: $gray-400;
 }
 
 html {
-    background: $gray-400;
+  background: $gray-400;
 }
 
 .container {
-    margin: 0 6rem;
-}
-
-.featured-text {
-    padding: 8em 32% 8em 0;
+  margin: 0 6rem;
+  @include breakpoint(md) {
+    margin: 0 3rem;
+  }
 }
 
 a {
-    border-bottom: 2px solid $gray-100;
-    color: $gray-100;
+  border-bottom: 2px solid $gray-100;
+  color: $gray-100;
+  text-decoration: none;
+  transition: border 0.3s ease;
+  &:hover {
+    border-color: $highlight;
     text-decoration: none;
-    
-    &:hover {
-        border-color: $highlight;
-        text-decoration: none;
-    }
+  }
 }
 
-// Nav & Footer
-
-nav, footer {
-    color: $gray-100;
-    padding: 1em 0;
-    font-size: 1.25em;
-
-    .container {
-        @include flex-between-middle
-    }
-
-    .brand {
-        a {
-            @include flex-between-middle;
-            color: $gray-100;
-            text-decoration: none;
-            border: none;
-
-            svg {
-                fill: $highlight;
-                margin-right: 1rem;
-            }
-
-            &:hover {
-                color: white;
-            }
-        }
-    }
-}
-
-footer {
-    margin-top: 8rem;
-}
-
-.navigation li a {
-    display: block;
-    color: $gray-100;
-    padding: .5em;
-    text-decoration: none;
-
-    &:hover {
-        color: white;
-    }
-}
-
-@media all and (min-width: 30em) {
-    .navigation li {
-        display: inline-block;
-    }
-
-    .navigation li a {
-        padding: 0.5em;
-        border: 0;
-    }
-}
-
-// Project Grid
-
-.project-grid {
-    padding: 0 6rem;
-}
-
-.project-grid > ul {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 2em;
-    grid-row-gap: 2em;
-}
-
-.project-grid > ul > li {
-    border: 1px solid transparent;
-    position: relative;
-
-    &:hover {
-        .figure-body {
-            border-left: 2px solid $highlight;
-        }
-
-        img {
-            opacity: .5;
-        }
-    }
-}
-
-.project-grid > ul > li > figure {
-    max-height: 320px;
-    overflow: hidden;
-    position: relative;
-
-    img {
-        width: 100%;
-    }
-}
-
-.project-grid > ul > li > figure > img {
-    width: 100%;
-}
-
-.figure-body {
-    background: $gray-300;
-    border-left: 2px solid transparent;
-    color: $gray-100;
-    padding: 1rem 1.5rem;
-
-    h2 {
-        font-size: 1.5em;
-        margin: 0;
-    }
-
-    p {
-        font-size: 1rem;
-        margin: 0;
-    }
-
-    a {
-        text-decoration: none;
-
-        &:hover {
-
-        }
-        
-        span {
-            position:absolute; 
-            width:100%;
-            height:100%;
-            top:0;
-            left: 0;
-            z-index: 1;
-        }
-    }
-}
-
-// Pages
-
-.page-header {
-    padding: 6em 0;
-}
-
-.work-sample {
-    margin: 6em 0;
-}
-
-// Utilities
-
-.indent-left {
-    margin-left: 6rem;
-}
-
-.columns-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: top;
-    gap: 6rem;
-}
-
-.columns-middle {
-    @include flex-between-middle;
-    gap: 6rem;
-}
-
-.columns-middle-start {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.columns-middle-end {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.quarter {
-    width: 25%;
-}
-
-.half {
-    width: 50%;
-}
-
-.third {
-    width: 75%;
+main {
+  margin-top: 3rem;
 }

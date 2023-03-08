@@ -1,0 +1,55 @@
+nav, footer {
+  color: $gray-100;
+  padding: 1em 0;
+  font-size: 1.25em;
+
+  .container {
+    @include flex-between-middle;
+    @include breakpoint(sm) {
+      flex-direction: column;
+    }
+  }
+
+  .brand {
+    @include breakpoint(sm) {
+      margin-bottom: 2rem;
+      padding-top: 1rem;  
+    }
+    a {
+      @include flex-between-middle;
+      color: $gray-100;
+      text-decoration: none;
+      border: none;
+
+      svg {
+        fill: $highlight;
+        margin-right: 1rem;
+      }
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 8rem;
+}
+
+.navigation {
+  li {
+    display: inline-block;
+  }
+  a {
+    display: block;
+    color: $gray-100;
+    padding: .5em;
+    text-decoration: none;
+    border: 0;
+  
+    &:hover {
+        color: white;
+    }
+  }
+}

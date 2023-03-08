@@ -1,0 +1,73 @@
+.more-work {
+  .columns-middle-start {
+    gap: 2rem;
+  }
+  padding: 6rem 0;
+  h4 {
+    margin: 0;
+  }
+  a {
+    align-items: center;
+    background: transparent;
+    border: 1px solid $gray-200;
+    border-radius: 200px;
+    display: flex;
+    font-size: 2rem;
+    height: 6rem;
+    padding: 0 2.75rem 0 1.5rem;
+    &:before {
+      background: white;
+      border-radius: 50%;
+      content: '';
+      display: block;
+      height: 48px;
+      margin-right: 1rem;
+      width: 48px;
+    }
+    &:hover {
+      background: $gray-300;
+      border-color: $gray-100;
+      color: white;
+    }
+  }
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  a.untappd {
+    &:before {
+      background: #FFC405;
+    }
+  }
+
+  a.crossroads {
+    &:before {
+      background: #F47920;
+    }
+  }
+
+  a.clarke {
+    &:before {
+      background: #E32526;
+    }
+  }
+
+  a.health-carousel {
+    &:before {
+      background: #872E91;
+    }
+  }
+
+  a.webstop {
+    &:before {
+      background: #0194D3;
+    }
+  }
+
+  a.next-glass {
+    &:before {
+      background: #32A6C8;
+    }
+  }
+}

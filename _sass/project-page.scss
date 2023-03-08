@@ -1,0 +1,29 @@
+.proj-back {
+  margin-bottom: 3rem;
+  span {
+    display: none;
+  }
+  &:hover {
+    margin-left: -20px;
+    span {
+      display: inline;
+    }
+  }
+}
+
+.work-sample {
+  margin: 6rem 0 4rem 0;
+}
+
+aside img {
+  border-radius: $radius;
+  height: 412px;
+  margin-top: 2rem; 
+  object-fit: cover;
+  object-position: 65% 25%;
+  width: 504px;
+}
+
+.product-image {
+  width: 100%;
+}
