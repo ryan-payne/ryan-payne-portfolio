@@ -4,22 +4,28 @@ title: Ryan Payne
 
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
+  {% include head.html %} 
   <body>
-    {% include nav.html %}
-
-    <div class="container half featured-text">
-      <p class="large indent-left">I’m Ryan, a digital product designer based in Cincinnati. I turn complex ideas into easy to use digital products by being curious, asking the right questions, and sweating the details.</p>
+    {% include nav.html %}  
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 offset-md-1">
+          <p class="large featured-text">
+            I’m Ryan, a digital product designer based in Cincinnati. I turn complex ideas into easy to use digital products by being curious, asking the right questions, and sweating the details.
+          </p>
+        </div>
+      </div>
+    </div>    
+    {% include project-grid.html %}    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 offset-md-1">
+          <p class="large featured-text">
+            I’m currently partnering with clients through Ingage Partners in Cincinnati, OH. If you'd like to work together, <a href="https://www.ingagepartners.com/contact">contact us</a>. We’d love to hear more about your needs.
+          </p>
+        </div>
+      </div>
     </div>
-    
-    <!-- Project Grid -->
-    
-    {% include project-grid.html %}
-
-    <div class="container half featured-text">
-      <p class="large indent-left">I’m currently partnering with clients through Ingage Partners in Cincinnati, OH. If you'd like to work together, <a href="https://www.ingagepartners.com/contact">contact us</a>. We’d love to hear more about your needs.</p>
-    </div>
-
     {% include footer.html %}
   </body>
 </html>

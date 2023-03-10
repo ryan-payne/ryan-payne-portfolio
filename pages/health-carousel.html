@@ -8,15 +8,15 @@ title: Health Carousel
   {% include head.html %}
   <body>
     {% include nav.html %}
-    <div class="container margin-left-none">
-      <div class="page-header columns-top-start">
-        <aside>
-          <figure>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4 col-md-12">
+          <figure class="project-image">
             <img src="https://images.unsplash.com/photo-1590611936760-eeb9bc598548?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80" alt="A nurse putting on personal protection equipment">
           </figure>
-        </aside>
-        
-        <main class="half">
+        </div>
+
+        <div class="col-xl-8 col-md-12 px-5">
           {% include proj-back.html %}
           <h1 class="title">Health Carousel</h1>
           <p>
@@ -44,64 +44,57 @@ title: Health Carousel
                 Nurse recruiters spend a lot of time handling administrative details rather than focusing on their recruitement pipeline or nurturing relationships with nurses.
               </p>
             </li>
-          </ul>
-        </main>
-      </div>
+          </ul>      
+        </div>
+      </div>            
     </div>
 
     <!-- Work Samples -->
 
-    <section class="container">
-      <div class="work-sample">
-        <div class="columns-top">
-          <div class="columns-top">
-            <div class="col half">
-              <figure>
-                <img class="product-image" src="/images/hc-profile.png" alt="Screenshot of the Crossroads Kids Club check-in app showing a room request" />
-              </figure>
-              
-              <figcaption>
-                <p>Dashboard</p>
-              </figcaption>
-            </div>
-            <div class="col half">
-              <figure>
-                <img class="product-image" src="/images/hc-job-search.png" alt="Screenshot of the Crossroads Kids Club check-in app showing a room request" />
-              </figure>
-              
-              <figcaption>
-                <p>Job Search</p>
-              </figcaption>
-            </div>
-          </div>
-
-          <div class="columns-top">
-            <div class="col half">
-              <figure>
-                <img class="product-image" src="/images/hc-creds.png" alt="Screenshot of the Crossroads Kids Club check-in app showing a room request" />
-              </figure>
-              
-              <figcaption>
-                <p>Credentialing</p>
-              </figcaption>
-            </div>
-            <div class="col half">
-              <figure>
-                <img class="product-image" src="/images/hc-match.png" alt="Screenshot of the Crossroads Kids Club check-in app showing a room request" />
-              </figure>
-              
-              <figcaption>
-                <p>Recommended jobs</p>
-              </figcaption>
-            </div>
-          </div>
+    <div class="container">
+      <div class="row work-sample">
+        <div class="col-xl-3 col-md-12">
+          <figure>
+            <img class="product-image w-100" src="/images/hc-profile.png" alt="Screenshot of the Crossroads Kids Club check-in app showing a room request" />
+          </figure>
+          
+          <figcaption>
+            <p>Dashboard</p>
+          </figcaption>          
+        </div>
+        <div class="col-xl-3 col-md-12">
+          <figure>
+            <img class="product-image w-100" src="/images/hc-job-search.png" alt="Screenshot of the Crossroads Kids Club check-in app showing a room request" />
+          </figure>
+          
+          <figcaption>
+            <p>Job Search</p>
+          </figcaption>
+        </div>
+        <div class="col-xl-3 col-md-12">
+          <figure>
+            <img class="product-image w-100" src="/images/hc-creds.png" alt="Screenshot of the Crossroads Kids Club check-in app showing a room request" />
+          </figure>
+          
+          <figcaption>
+            <p>Credentialing</p>
+          </figcaption>
+        </div>
+        <div class="col-xl-3 col-md-12">
+          <figure>
+            <img class="product-image w-100" src="/images/hc-match.png" alt="Screenshot of the Crossroads Kids Club check-in app showing a room request" />
+          </figure>
+          
+          <figcaption>
+            <p>Recommended jobs</p>
+          </figcaption>
         </div>
       </div>
-    </section>
+    </div> 
     
     <div class="container">
-      <div class="columns-middle">
-        <div class="col half eighth indent-left">
+      <div class="row align-items-center">
+        <div class="col-xl-8 col-md-12 px-5">
           <h3>Process</h3>
           <p>
             The marketing team surveyed current travel nurses to uncover pain points in the existing job placement and credentialing process. Based on survey results and business objectives the development team created an alpha release for concept testing.
@@ -131,23 +124,27 @@ title: Health Carousel
           </ul>
         </div>
   
-        <div class="col flex-col half">
-          <img src="/images/hc-collage.png" alt="nurse caring for patients" />
+        <div class="col-xl-4 col-md-12 ms-auto d-md-none d-xl-block">
+          <img class="collage w-75 float-end" src="/images/hc-collage.png" alt="nurse caring for patients" />
         </div>
       </div>
     </div>
-
-    <section class="container more-work">
-      <div class="columns-middle-start">
-        <h4>More Work</h4>
-        <div class="icon">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-          </svg>
+    
+    <div class="container more-work">
+      <div class="row">
+        <div class="col-xl-6 col-md-12">
+          <div class="d-flex align-items-center justify-content-between">
+            <h4>More Work</h4>
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </div>
+            <a class="webstop" href="/webstop">Webstop</a>        
+          </div>
         </div>
-        <a class="webstop" href="/webstop">Webstop</a>
       </div>
-    </section>
+    </div>
     {% include footer.html %}
   </body>
 </html>

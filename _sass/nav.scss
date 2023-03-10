@@ -1,20 +1,15 @@
 nav, footer {
+  background: $gray-400;
   color: $gray-100;
   padding: 1em 0;
   font-size: 1.25em;
+  margin-bottom: 2rem;
 
   .container {
     @include flex-between-middle;
-    @include breakpoint(sm) {
-      flex-direction: column;
-    }
   }
 
   .brand {
-    @include breakpoint(sm) {
-      margin-bottom: 2rem;
-      padding-top: 1rem;  
-    }
     a {
       @include flex-between-middle;
       color: $gray-100;
@@ -31,6 +26,13 @@ nav, footer {
       }
     }
   }
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
 }
 
 footer {

@@ -1,17 +1,17 @@
 ---
 ---
 
+@import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap-grid.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap-utilities.min.css");
+
 @import "reset";
-@import "breakpoints";
 @import "variables";
 @import "mixins";
-@import "Utilities";
 @import "Typography";
 @import "nav";
 @import "project-grid";
 @import "more-work";
-@import "resume";
-@import "project-page";
+@import "pages";
 
 ::selection {
   background: $highlight;
@@ -20,13 +20,7 @@
 
 html {
   background: $gray-400;
-}
-
-.container {
-  margin: 0 6rem;
-  @include breakpoint(md) {
-    margin: 0 3rem;
-  }
+  padding-top: 8em;
 }
 
 a {

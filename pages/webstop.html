@@ -3,21 +3,20 @@ permalink: /webstop/
 title: Webstop
 ---
 
-
 <!DOCTYPE html>
 <html>
   {% include head.html %}
   <body>
     {% include nav.html %}
-    <div class="container margin-left-none">
-      <div class="page-header columns-top-start">
-        <aside>
-          <figure>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4 col-md-12">
+          <figure class="project-image">
             <img src="https://www.webstop.com/assets/stock_images/WomanShopping_480x580-87b5e05ed0e6779ebcb8a6fd18b7d5659fe206911d0f185ef5cd24c94b7b168e.jpg" alt="A woman using her phone while shopping for produce">
           </figure>
-        </aside>
-        
-        <main class="half">
+        </div>
+
+        <div class="col-xl-8 col-md-12 px-5">
           {% include proj-back.html %}
           <h1 class="title">Webstop</h1>
           <p>
@@ -33,45 +32,42 @@ title: Webstop
           <p>
             The existing Weekly Ad feature was difficult to navigate between pages and grocery departments and was visually outdated.
           </p>
-        </main>
-      </div>
+        </div>
+      </div>            
     </div>
 
     <!-- Work Samples -->
 
-    <section class="container">
-      <div class="work-sample">
-        <div class="columns-top">
-          <div class="col half">
-            <figure>
-              <img class="product-image" src="/images/webstop-ad.png" alt="Screenshot of a web-based weekly grocery store ad" />
-            </figure>
-            
-            <figcaption>
-              <p>
-                Users can easily switch between ad sections, departments, and pages and add items to a shopping list.
-              </p>
-            </figcaption>
-          </div>
-
-          <div class="col half">
-            <figure>
-              <img class="product-image" src="/images/webstop-list.png" alt="Screenshot of a web-based shopping list" />
-            </figure>
-            
-            <figcaption>
-              <p>
-                The shopping list is easily accessible and can be updated on the fly.
-              </p>
-            </figcaption>
-          </div>
+    <div class="container">
+      <div class="row work-sample">
+        <div class="col-xl-6 col-md-12">
+          <figure>
+            <img class="product-image w-100" src="/images/webstop-ad.png" alt="Screenshot of a web-based weekly grocery store ad" />
+          </figure>
+          
+          <figcaption>
+            <p>
+              Users can easily switch between ad sections, departments, and pages and add items to a shopping list.
+            </p>
+          </figcaption>
+        </div>
+        <div class="col-xl-6 col-md-12">
+          <figure>
+            <img class="product-image w-100" src="/images/webstop-list.png" alt="Screenshot of a web-based shopping list" />
+          </figure>
+          
+          <figcaption>
+            <p>
+              The shopping list is easily accessible and can be updated on the fly.
+            </p>
+          </figcaption>
         </div>
       </div>
-    </section>
+    </div> 
     
     <div class="container">
-      <div class="columns-middle">
-        <div class="col half eighth indent-left">
+      <div class="row align-items-center">
+        <div class="col-xl-8 col-md-12 px-5">
           <h3>Process</h3>
           <p>
             Without access to users, my first step was to complete a hueiristic evaluation. This allowed me to identify potential usability issues and prioritize improvements. Next, I reviewed user feedback from the current product and identified several areas of opportunity.
@@ -88,23 +84,27 @@ title: Webstop
           </p>
         </div>
   
-        <div class="col flex-col half">
-          <img src="/images/webstop-collage.png" alt="produce and an adult male and child grocery shopping together" />
+        <div class="col-xl-4 col-md-12 ms-auto d-md-none d-xl-block">
+          <img class="collage w-75 float-end" src="/images/webstop-collage.png" alt="produce and an adult male and child grocery shopping together" />
         </div>
       </div>
     </div>
-
-    <section class="container more-work">
-      <div class="columns-middle-start">
-        <h4>More Work</h4>
-        <div class="icon">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-          </svg>
+    
+    <div class="container more-work">
+      <div class="row">
+        <div class="col-xl-6 col-md-12">
+          <div class="d-flex align-items-center justify-content-between">
+            <h4>More Work</h4>
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </div>
+            <a class="next-glass" href="/next-glass">Next Glass</a>
+          </div>
         </div>
-        <a class="next-glass" href="/next-glass">Next Glass</a>
       </div>
-    </section>
+    </div>
     {% include footer.html %}
   </body>
 </html>

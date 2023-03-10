@@ -1,25 +1,37 @@
 .project-grid {
-  padding: 3rem 6rem;
-  @include breakpoint(md) {
-    padding: 3rem
+  padding: 3rem 0;
+
+  img {
+    border-radius: $radius;
+    height: 300px;
+    margin-top: 2rem; 
+    object-fit: cover;
+    object-position: 65% 25%;
+    width: 100%;
   }
 }
 
-.project-grid > ul {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 3em;
-  grid-row-gap: 3em;
-  @include breakpoint(md) {
-    grid-template-columns: 1fr;
-  }
-}
-
-.project-grid > ul > li {
-  border: 1px solid transparent;
+.project-item {
   list-style: none;
-  position: relative;
   transition: all 0.3s ease;
+  position: relative;
+
+  a {
+    text-decoration: none;    
+    span {
+      position:absolute; 
+      width:100%;
+      height:100%;
+      top:0;
+      left: 0;
+      z-index: 1;
+    }
+  }
+
+  .figure-body {
+    border-left: 4px solid transparent;
+  }
+  
   .figure-body, img {
       transition: all 0.3s ease;
   }
@@ -35,21 +47,11 @@
   }
 }
 
-.project-grid > ul > li > figure {
-  border-radius: $radius;
-  max-height: 264px;
-  overflow: hidden;
-  position: relative;
-  img {
-    width: 100%;
-  }
-}
-
 .figure-body {
   border-left: 4px solid transparent;
   color: $gray-100;
-  margin-top: 2em;
-  padding: 0 1.5rem;
+  margin-top: 1em;
+  padding: .5rem 1.5rem;
   h2 {
       font-size: 1.5em;
       margin: 0;
@@ -57,16 +59,5 @@
   p {
       font-size: 1rem;
       margin: 0;
-  }
-  a {
-    text-decoration: none;    
-    span {
-      position:absolute; 
-      width:100%;
-      height:100%;
-      top:0;
-      left: 0;
-      z-index: 1;
-    }
   }
 }

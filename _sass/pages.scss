@@ -1,0 +1,82 @@
+// Projects
+
+.proj-back {
+  margin: 1rem 0 3rem 0;
+  span {
+    display: none;
+  }
+  &:hover {
+    margin-left: -20px;
+    span {
+      display: inline;
+    }
+  }
+}
+
+.work-sample {
+  margin: 6rem 0 4rem 0;
+}
+
+.project-image img {
+  border-radius: $radius;
+  max-inline-size: 100%;
+  block-size: auto;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.page-header {
+  padding: 4rem 0;
+}
+
+// Resume
+
+.resume-item {
+  margin-bottom: 4rem;
+}
+
+.location, .role, .duration {
+  display: block;
+}
+
+.industry-tag {
+  display: block;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+// Bio
+
+.quotes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 2rem;
+}
+
+blockquote {
+  background-position: 3rem -1rem;
+  background-repeat: no-repeat;
+  background-size: 35px 20px;
+  border: 1px solid $gray-200;
+  border-radius: $radius;
+  padding: 3em;
+  transition: all 0.3s ease;
+  &:hover {
+    background: $gray-300;
+    box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.10);
+    svg {
+      fill: $highlight;
+    }
+  }
+  svg {
+    float: left;
+    fill: $gray-200;
+    margin-right: 1.5rem;
+    width: 15%;
+    transition: all 0.3s ease;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+}

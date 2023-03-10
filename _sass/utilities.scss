@@ -1,8 +1,5 @@
 .indent-left {
   margin-left: 6rem;
-  @include breakpoint (md) {
-    margin: 0;
-  }
 }
 
 .margin-auto {
@@ -51,9 +48,6 @@
 
 .margin-right {
   margin-right: 10rem;
-  @include breakpoint(sm) {
-    margin-right: 0;
-  }
 }
 
 .margin-top-none {
@@ -121,7 +115,4 @@
 }
 
 .quarter, .quarter.eighth, .half, .half.eighth, .third {
-  @include breakpoint(md) {
-    width: auto;  
-  }
 }
