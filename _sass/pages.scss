@@ -25,10 +25,6 @@
   object-position: top center;
 }
 
-.page-header {
-  padding: 4rem 0;
-}
-
 // Resume
 
 .resume-item {
@@ -46,12 +42,6 @@
 }
 
 // Bio
-
-.quotes {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 2rem;
-}
 
 blockquote {
   background-position: 3rem -1rem;

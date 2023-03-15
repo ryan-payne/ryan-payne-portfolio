@@ -1,17 +1,14 @@
 ---
 ---
 
-@import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap-grid.min.css");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap-utilities.min.css");
-
 @import "reset";
 @import "variables";
 @import "mixins";
-@import "typography";
 @import "nav";
 @import "project-grid";
 @import "more-work";
 @import "pages";
+@import "typography";
 
 ::selection {
   background: $highlight;
@@ -20,7 +17,10 @@
 
 html {
   background: $gray-400;
-  padding-top: 8em;
+  padding-top: 4rem;
+  @media not all and (min-width: 640px) { 
+    padding-top: 10rem;
+  }
 }
 
 a {
@@ -32,8 +32,7 @@ a {
     border-color: $highlight;
     text-decoration: none;
   }
-}
-
-main {
-  margin-top: 3rem;
+  @media not all and (min-width: 640px) { 
+    border-bottom: 1px solid $gray-100;
+  }
 }

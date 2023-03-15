@@ -8,29 +8,29 @@ title: Colophon
   {% include head.html %}
   <body>
     {% include nav.html %}
-    <div class="container">
-      <div class="page-header">
+    <div class="container px-8 md:px-0 mx-auto mx-auto">
+      <div class="w-full lg:w-4/6 page-header">
         <div class="row">
           <div class="col-md-8">
             <h1 class="title">Colophon</h1>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-8">
-          <h3>The Tech Stuff</h3>
-          <p>
-            This site was written in plain old HTML and SCSS (like we used to do it), was built with Jekyll, a Ruby static site generator, and is hosted on Github Pages.
-          </p>
-          <p>I used Bootstrap's grid and utility classes.</p>
-          <h3>The Design Stuff</h3>
-          <p>
-            This site was typeset in Inter by Rasmus Andersson.
-          </p>
-          <p>
-            Inter is a typeface carefully crafted & designed for computer screens. It features a tall x-height to aid in readability of mixed-case and lower-case text.
-          </p>
-        </div>
+      <div class="w-full lg:w-4/6">
+        <h2 class="mb-6">The Tech Stuff</h2>
+        <p class="mb-6">
+          I had an idea that I would write this site like I used to do it — in plain old HTML and SCSS. And I did write it that way at first. But then I started writing my own media query mixins (which absolutely sucks) and I was spending way too much time writing my own utility classes.
+        </p>
+        <p class="mb-6">
+          So now this site is written in plain old HTML and SCSS but with the help of Tailwind. It was built with Jekyll, a Ruby static site generator, and is hosted on Github Pages.
+        </p>
+        <h2 class="mt-12 mb-6">The Design Stuff</h2>
+        <p class="mb-6">
+          This site was typeset in Inter by Rasmus Andersson.
+        </p>
+        <p class="mb-6">
+          Inter is a typeface carefully crafted & designed for computer screens. It features a tall x-height to aid in readability of mixed-case and lower-case text.
+        </p>
       </div>
     </div>
     {% include footer.html %}
