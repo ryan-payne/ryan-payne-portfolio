@@ -66,6 +66,9 @@ h3 {
 
 h4 {
   font-size: 1.563rem !important;
+  @media not all and (min-width: 640px) { 
+    font-size: 1.25rem !important;
+  }
 }
 
 h5 {
@@ -74,15 +77,6 @@ h5 {
 
 small, .text_small {
   font-size: 0.8rem;
-}
-
-figcaption {
-  padding: 1rem 4rem;
-  p {
-    font-size: 1rem;
-    text-align: center;
-    line-height: 1.5rem;
-  }
 }
 
 .styled-list {

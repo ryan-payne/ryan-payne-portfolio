@@ -8,28 +8,28 @@ title: Health Carousel
   {% include head.html %}
   <body>
     {% include nav.html %}
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-4 col-md-12">
-          <figure class="project-image">
+    <div class="container px-8 mx-auto">
+      <div class="grid gap-16 lg:grid-cols-12">
+        <div class="col-span-5">
+          <figure class="project-image mb-4">
             <img src="https://images.unsplash.com/photo-1590611936760-eeb9bc598548?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80" alt="A nurse putting on personal protection equipment">
           </figure>
         </div>
 
-        <div class="col-xl-8 col-md-12 px-5">
+        <div class="col-span-7">
           {% include proj-back.html %}
-          <h1 class="title">Health Carousel</h1>
-          <p>
+          <h1 class="title mb-8">Health Carousel</h1>
+          <p class="mb-8">
             Health Carousel Travel Nursing connects healthcare facilities to a national network of experienced travel nurse and allied healthcare professionals for immediate and crisis support.
           </p>
 
-          <h3>Project Background</h3>
-          <p>
+          <h3 class="mb-8">Project Background</h3>
+          <p class="mb-8">
             Health Carousel employs a large team of recruiters that help travel nurses find, apply for, and win new assignments in a fast-paced and competitive environment. They knew that it was important to build a tool that would empower nurses to find assignments and keep their information up-to-date on their own schedules.
           </p>
 
-          <h3>Opportunity Space</h3>
-          <ul class="styled-list">
+          <h3 class="mb-8">Opportunity Space</h3>
+          <ul class="styled-list pl-12 mb-12">
             <li>
               <p>Nurses need to use a website that is sometimes difficult to use and is not mobile-friendly to find assignments they might be interested in.</p>
             </li>
@@ -44,73 +44,76 @@ title: Health Carousel
                 Nurse recruiters spend a lot of time handling administrative details rather than focusing on their recruitement pipeline or nurturing relationships with nurses.
               </p>
             </li>
-          </ul>      
+          </ul>
         </div>
-      </div>            
-    </div>
-
-    <!-- Work Samples -->
-
-    <div class="container">
-      <div class="row work-sample">
-        <div class="col-xl-3 col-md-12">
+      </div>
+      
+      <!-- Work Samples -->
+      
+      <div class="grid my-16 lg:grid-cols-4 lg:gap-16 work-samples">
+        <div>
           <figure>
-            <img class="product-image w-100" src="/images/hc-profile.png" alt="Screenshot of the Crossroads Kids Club check-in app showing a room request" />
+            <img src="/images/hc-profile.png" alt="Screenshot of the On Demand dashboard" />
           </figure>
           
           <figcaption>
-            <p>Dashboard</p>
-          </figcaption>          
-        </div>
-        <div class="col-xl-3 col-md-12">
-          <figure>
-            <img class="product-image w-100" src="/images/hc-job-search.png" alt="Screenshot of the Crossroads Kids Club check-in app showing a room request" />
-          </figure>
-          
-          <figcaption>
-            <p>Job Search</p>
+            <p class="mb-8 mx-8 my-4 text-center md:mx-16">
+              Dashboard
+            </p>
           </figcaption>
         </div>
-        <div class="col-xl-3 col-md-12">
+        <div>
           <figure>
-            <img class="product-image w-100" src="/images/hc-creds.png" alt="Screenshot of the Crossroads Kids Club check-in app showing a room request" />
+            <img src="/images/hc-job-search.png" alt="Screenshot of the On Demand Job Search feature" />
           </figure>
           
           <figcaption>
-            <p>Credentialing</p>
+            <p class="mb-8 mx-8 my-4 text-center md:mx-16">
+              Job Search
+            </p>
           </figcaption>
         </div>
-        <div class="col-xl-3 col-md-12">
+        <div>
           <figure>
-            <img class="product-image w-100" src="/images/hc-match.png" alt="Screenshot of the Crossroads Kids Club check-in app showing a room request" />
+            <img src="/images/hc-creds.png" alt="Screenshot of the On Demand credentialing feature" />
           </figure>
           
           <figcaption>
-            <p>Recommended jobs</p>
+            <p class="mb-8 mx-8 my-4 text-center md:mx-16">
+              Credentialing
+            </p>
+          </figcaption>
+        </div>
+        <div>
+          <figure>
+            <img src="/images/hc-match.png" alt="Screenshot of the recommended jobs feature" />
+          </figure>
+          
+          <figcaption>
+            <p class="mb-8 mx-8 my-4 text-center md:mx-16">
+              Recommended Jobs
+            </p>
           </figcaption>
         </div>
       </div>
-    </div> 
-    
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-xl-8 col-md-12 px-5">
-          <h3>Process</h3>
-          <p>
+      <div class="grid items-center gap-16 lg:grid-cols-12">
+        <div class="col-span-7">
+          <h3 class="mb-8">Process</h3>
+          <p class="mb-8">
             The marketing team surveyed current travel nurses to uncover pain points in the existing job placement and credentialing process. Based on survey results and business objectives the development team created an alpha release for concept testing.
           </p>
 
-          <p>
+          <p class="mb-8">
             I synthesized data from the survey and interviews and used it to create a set of prototypes for an initial round of moderated usability testing and continued iteration.
           </p>
   
-          <h3>Solution</h3>
-          <p>
+          <h3 class="mb-8">Solution</h3>
+          <p class="mb-8">
             In partnership with the development team we created a progressive mobile tapp that allows nurses to search for jobs based on their preferences, view job details like facility and pay, set up job alerts, and update credentials.
           </p>
   
-          <h3>Results</h3>
-          <ul class="styled-list">
+          <h3 class="mb-8">Results</h3>
+          <ul class="styled-list pl-12 mb-12">
             <li>
               <p>
                 Health Carousel Travel Nursing received satisfaction scores of 9 out of 10 from 86.8% of their nurses
@@ -123,26 +126,19 @@ title: Health Carousel
             </li>
           </ul>
         </div>
-  
-        <div class="col-xl-4 col-md-12 ms-auto d-md-none d-xl-block">
-          <img class="collage w-75 float-end" src="/images/hc-collage.png" alt="nurse caring for patients" />
+        <div class="col-span-5 justify-self-end">
+          <img class="hidden lg:block lg:w-80 lg:float-end" src="/images/hc-collage.png" alt="nurse caring for patients" />
         </div>
-      </div>
-    </div>
-    
-    <div class="container more-work">
-      <div class="row">
-        <div class="col-xl-6 col-md-12">
-          <div class="d-flex align-items-center justify-content-between">
-            <h4>More Work</h4>
-            <div class="icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-              </svg>
-            </div>
-            <a class="webstop" href="/webstop">Webstop</a>        
-          </div>
+      </div>            
+      
+      <div class="more-work my-16 flex flex-col items-center space-between md:flex-row">
+        <h4>More Work</h4>
+        <div class="icon hidden md:inline-block md:mx-8">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+          </svg>
         </div>
+        <a class="webstop mt-8 px-6 flex flex-row items-center space-between pr-12 md:mt-0" href="/webstop">Webstop</a>
       </div>
     </div>
     {% include footer.html %}

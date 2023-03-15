@@ -1,25 +1,27 @@
-.more-work {
-  padding: 6rem 0 0 0;
+.more-work {  
   h4 {
     margin: 0;
   }
+  
   a {
-    align-items: center;
     background: transparent;
     border: 1px solid $gray-200;
     border-radius: 200px;
-    display: flex;
     font-size: 2rem;
+    line-height: 1.75rem;
     height: 6rem;
-    padding: 0 2.75rem 0 1.5rem;
+    @media not all and (min-width: 640px) { 
+      font-size: 1.5rem;
+      font-size: 1.5rem;
+    }
     &:before {
       background: white;
       border-radius: 50%;
       content: '';
-      display: block;
-      height: 48px;
+      display: inline-block;
+      min-height: 48px;
       margin-right: 1rem;
-      width: 48px;
+      min-width: 48px;
     }
     &:hover {
       background: $gray-300;
@@ -27,6 +29,7 @@
       color: white;
     }
   }
+
   .icon {
     width: 24px;
     height: 24px;

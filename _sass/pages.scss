@@ -13,8 +13,13 @@
   }
 }
 
-.work-sample {
-  margin: 6rem 0 4rem 0;
+.work-samples {
+  figcaption {
+    p {
+      font-size: 1rem;
+      line-height: 1.75rem;
+    }
+  }
 }
 
 .project-image img {

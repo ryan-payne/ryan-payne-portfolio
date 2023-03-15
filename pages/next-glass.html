@@ -8,28 +8,28 @@ title: Next Glass
   {% include head.html %}
   <body>
     {% include nav.html %}
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-4 col-md-12">
-          <figure class="project-image">
+    <div class="container px-8 mx-auto">
+      <div class="grid gap-16 lg:grid-cols-12">
+        <div class="col-span-5">
+          <figure class="project-image mb-4">
             <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80" alt="Friends toasting with wine glasses">
           </figure>
         </div>
 
-        <div class="col-xl-8 col-md-12 px-5">
+        <div class="col-span-7">
           {% include proj-back.html %}
-          <h1 class="title">Next Glass</h1>
-          <p>
+          <h1 class="title mb-8">Next Glass</h1>
+          <p class="mb-8">
             Next Glass develops software that uses science and machine learning to deliver personalized recommendations to consumers and breakthrough business tools to breweries, wineries, and retailers.  Next Glass has analyzed the chemistry of tens of thousands of bottles of wine and beer, and has stored the "DNA" of each beverage in its Genome Cellar™ database, creating the world's largest database of its kind.
           </p>
 
-          <h3>Project Background</h3>
-          <p>
+          <h3 class="mb-8">Project Background</h3>
+          <p class="mb-8">
             Next Glass had an compelling idea, two developers, a scientist, and no solid product strategy or design direction. I joined the team shortly after their seed fundraising round and helped turn the idea into something that they could use as an initial prototype and start to develop.
           </p>
 
-          <h3>Opportunity Space</h3>
-          <ul class="styled-list">
+          <h3 class="mb-8">Opportunity Space</h3>
+          <ul class="styled-list pl-12 mb-12">
             <li>
               <p>
                 Wine and beer recommendations, even from professionals, rely too much on industry buzz or the recommender's own palate.
@@ -47,67 +47,70 @@ title: Next Glass
             </li>
           </ul>
         </div>
-      </div>            
-    </div>
-
-    <!-- Work Samples -->
-
-    <div class="container">
-      <div class="row work-sample">
-        <div class="col-xl-3 col-md-12">
+      </div>
+      
+      <!-- Work Samples -->
+      
+      <div class="grid my-16 lg:grid-cols-4 lg:gap-16 work-samples">
+        <div>
           <figure>
-            <img class="product-image w-100" src="/images/ng-dash.png" alt="Screenshot of the Next Glass welcome screen" />
+            <img src="/images/ng-dash.png" alt="Screenshot of the Next Glass welcome screen" />
           </figure>
           
           <figcaption>
-            <p>Welcome Screen</p>
-          </figcaption>          
-        </div>
-        <div class="col-xl-3 col-md-12">
-          <figure>
-            <img class="product-image w-100" src="/images/ng-cam.png" alt="Screenshot of the Next Glass camera scanning a Bell's Two Hearted Ale" />
-          </figure>
-          
-          <figcaption>
-            <p>Scanning a drink</p>
+            <p class="mb-8 mx-8 my-4 text-center md:mx-16">
+              Welcome Screen
+            </p>
           </figcaption>
         </div>
-        <div class="col-xl-3 col-md-12">
+        <div>
           <figure>
-            <img class="product-image w-100" src="/images/ng-score-b.png" alt="Screenshot of Next Glass personalized score for a Russian River Pliny the Elder" />
+            <img src="/images/ng-cam.png" alt="Screenshot of the Next Glass camera scanning a Bell's Two Hearted Ale" />
           </figure>
           
           <figcaption>
-            <p>Personalized Score</p>
+            <p class="mb-8 mx-8 my-4 text-center md:mx-16">
+              Scanning a drink
+            </p>
           </figcaption>
         </div>
-        <div class="col-xl-3 col-md-12">
+        <div>
           <figure>
-            <img class="product-image w-100" src="/images/ng-score-a.png" alt="Screenshot of Next Glass personalized score for a Bell's Two Hearted Ale" />
+            <img src="/images/ng-score-b.png" alt="Screenshot of Next Glass personalized score for a Russian River Pliny the Elder" />
           </figure>
           
           <figcaption>
-            <p>Score with Drink Details</p>
+            <p class="mb-8 mx-8 my-4 text-center md:mx-16">
+              Personalized Score
+            </p>
+          </figcaption>
+        </div>
+        <div>
+          <figure>
+            <img src="/images/ng-score-a.png" alt="Screenshot of Next Glass personalized score for a Bell's Two Hearted Ale" />
+          </figure>
+          
+          <figcaption>
+            <p class="mb-8 mx-8 my-4 text-center md:mx-16">
+              Score with Drink Details
+            </p>
           </figcaption>
         </div>
       </div>
-    </div> 
-    
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-xl-8 col-md-12 px-5">
-          <h3>Process</h3>
-          <p>
+      <div class="grid items-center gap-16 lg:grid-cols-12">
+        <div class="col-span-7">
+          <h3 class="mb-8">Process</h3>
+          <p class="mb-8">
             Along with early market research conducted by the founder, I conducted user interviews and concept tests to inform early prototypes. After development we regurlary tested usability with unmoderated tests via usertesting.com and incorporated user feedback in feature enhancements.
           </p>
   
-          <h3>Solution</h3>
-          <p>
-            I created a design that allowed users to rate commonly purchased beer and wine and quickly get recommendations with a score between 1—100. The higher the score, the more likely the user is to enjoy the beverage. 
+          <h3 class="mb-8">Solution</h3>
+          <p class="mb-8">
+            I created a design that allowed users to rate commonly purchased beer and wine and quickly get recommendations with a score between 1 – 100. The higher the score, the more likely the user is to enjoy the beverage. 
           </p>
   
-          <h3>Results</h3>
-          <ul class="styled-list">
+          <h3 class="mb-8">Results</h3>
+          <ul class="styled-list pl-12 mb-12">
             <li>
               <p>
                 Named one of the Apple App Store's best new apps
@@ -120,26 +123,19 @@ title: Next Glass
             </li>
           </ul>
         </div>
-  
-        <div class="col-xl-4 col-md-12 ms-auto d-md-none d-xl-block">
-          <img class="collage w-75 float-end" src="/images/ng-collage.png" alt="centrifuge and beer" />
+        <div class="col-span-5 justify-self-end">
+          <img class="hidden lg:block lg:w-80 lg:float-end" src="/images/ng-collage.png" alt="centrifuge and beer" />
         </div>
-      </div>
-    </div>
-    
-    <div class="container more-work">
-      <div class="row">
-        <div class="col-xl-6 col-md-12">
-          <div class="d-flex align-items-center justify-content-between">
-            <h4>More Work</h4>
-            <div class="icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-              </svg>
-            </div>
-            <a class="untappd" href="/untappd">Untappd for Business</a>
-          </div>
+      </div>            
+      
+      <div class="more-work my-16 flex flex-col items-center space-between md:flex-row">
+        <h4>More Work</h4>
+        <div class="icon hidden md:inline-block md:mx-8">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+          </svg>
         </div>
+        <a class="untappd mt-8 px-6 flex flex-row items-center space-between pr-12 md:mt-0" href="/untappd">Untappd for Business</a>
       </div>
     </div>
     {% include footer.html %}
